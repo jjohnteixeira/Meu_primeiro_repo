@@ -23,7 +23,6 @@ def centroid(pts):
   y = [ c[1] for c in pts ]
   sx = sy = 0
   a = area(pts)
-  # esta parte tem algum erro que eu não encontrei
   for i in range(len(pts) - 1):
     sx += (x[i] + x[i+1])*(x[i]*y[i+1] - x[i+1]*y[i])
     sy += (y[i] + y[i+1])*(x[i]*y[i+1] - x[i+1]*y[i])
